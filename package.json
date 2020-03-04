@@ -1,0 +1,19 @@
+{
+  "name": "multi-image-preview-and-upload",
+  "version": "1.0.0",
+  "description": "multi image preview and upload",
+  "main": "main",
+  "scripts": {
+    "run": "node ./src/main.js"
+  },
+  "keywords": [
+    "html5",
+    "multi image upload",
+    "image preview"
+  ],
+  "author": "zhaixiaowai",
+  "license": "",
+  "dependencies": {
+    "formidable": "^1.2.2"
+  }
+}
