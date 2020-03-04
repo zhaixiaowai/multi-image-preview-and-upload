@@ -20,6 +20,8 @@
 			justify-content: center;
 		}
 		#previewBox .item img{width: 130px;height: 130px;}
+		#previewBox .item .btnRemove{position: absolute;right: 0;top:0;background:red;color:#fff;font-size: 12px;padding:0 5px;height: 20px;line-height: 20px;cursor: pointer;}
+		#previewBox .item .btnRemove:hover{background-color:blue ;}
 		#btnAdd{
 			text-decoration: none;
 			background: url(add.png) no-repeat center center;
@@ -149,6 +151,8 @@
 				item.appendChild(preview);
 				//创建删除按钮
 				let btnRemove = document.createElement("span");
+				btnRemove.className = "btnRemove";
+				btnRemove.innerHTML = "移除";
 				btnRemove.addEventListener("click",function(e){
 					let item = e.target.parentNode;
 					item.parentNode.removeChild(item);
@@ -161,6 +165,7 @@
 					}
 					setAddVisible();
 				});
+				item.appendChild(btnRemove);
 				//添加到容器
 				let previewBox=document.querySelector("#previewBox");
 				if(previewBox){
