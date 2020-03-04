@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require("fs");
 const url = require("url");
-var formdata = require('formidable');
+const formdata = require('formidable');
 const server = http.createServer();
 const HTTP_PORT = 3456; 
 /**
