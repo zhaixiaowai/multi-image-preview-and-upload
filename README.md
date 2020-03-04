@@ -18,5 +18,5 @@ node ./src/main.js
 测试项目访问
 http://127.0.0.1:3456/
 
-
+预览图
 ![preview](https://github.com/zhaixiaowai/multi-image-preview-and-upload/blob/master/src/res/preview.png?raw=true)
